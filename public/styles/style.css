@@ -7,9 +7,76 @@
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  min-height: 200vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  line-height: 1.6;
+}
+
+/* style untuk templates/hero.php */
+
+.header {
+  display: flex;
+  background-color: #0e0e0e;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url('../images/background.jpg');
+  background-position: right;
+  background-size: cover;
+  color: #fefefe;
+  min-height: 90vh;
+}
+
+.header .hero {
+  padding: 2rem;
+  position: relative;
+  isolation: isolate;
+  background-image: linear-gradient(90deg, #0e0e0e, transparent 40%);
+  width: 100%;
+}
+
+.header .hero-text {
+  padding: 1em;
+  max-width: 50ch;
+}
+
+.promotional-image {
+  max-height: 90vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  user-select: none;
+  max-width: 400px;
+}
+
+.year {
+  opacity: .7;
+}
+
+.hero-action {
+  display: flex;
+  gap: .3em;
+  align-items: center;
+  margin-top: .6em;
+  border-radius: .3em;
+  font-size: 1.2rem;
+  border: .15rem solid red;
+  padding: .4em .8em;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .1;
+}
+
+.hero-action svg {
+  height: 1.1em;
+}
+
+.hero-action:hover, .hero-action:focus-visible {
+  background-color: red;
+  color: #0e0e0e;
 }
 
 /* style untuk templates/navbar.php */
