@@ -8,7 +8,6 @@ class Pages extends CI_Controller {
     $data['menus'] = ['home', 'about'];
 
     $this->load->view('templates/header', $data);
-
     if($page == 'home') $this->load->view('templates/hero');
     $this->load->view('templates/navbar', $data);
     $this->load->view('pages/'.$page, $data);

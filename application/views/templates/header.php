@@ -8,5 +8,6 @@
   <title><?= $title ?> - Sai Gon in The Rain (2020)</title>
   <link rel="shortcut icon" href="favicon.svg" type="image/x-svg">
   <link rel="stylesheet" href="styles/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
