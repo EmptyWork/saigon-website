@@ -1,3 +1,4 @@
+/* style global */
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +7,71 @@
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* style untuk templates/navbar.php */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: .4em;
+  transition: color .15s ease;
+}
+
+.navbar .navbar-brand .navbar-brand-svg {
+  width: 2em;
+  height: 2em;
+}
+
+.navbar .navbar-brand .navbar-brand-text {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #cecece; */
+  padding: 0 1em;
+}
+
+.navbar .navbar-menus {
+  display: flex;
+  gap: 1em;
+  /* background-color: #dedede; */
+}
+
+.navbar .navbar-menus .navbar-menus-item {
+  /* background-color: #bbbbbb; */
+  padding: 1em;
+  list-style: none;
+}
+
+.navbar .navbar-menus .navbar-menus-item .navbar-menus-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  transition: color .15s ease;
+}
+
+.navbar-menus-link:hover, 
+.navbar-menus-link:focus-visible, 
+.navbar-brand:hover,
+.navbar-brand:focus-visible {
+  color: red;
 }
