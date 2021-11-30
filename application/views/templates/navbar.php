@@ -5,7 +5,7 @@
   </a>
   <ul class="navbar-menus sm-hide">
     <?php foreach ($menus as $menu): ?>
-    <li class="navbar-menus-item" class="<?= ($menu == strtolower($title)) ? "active" : "" ?>">
+    <li class="navbar-menus-item">
       <a class="navbar-menus-link" href="<?= ($menu != "home") ? "/".$menu : "/" ?>">
         <?= $menu ?>
       </a>
@@ -19,7 +19,7 @@
 </nav>
 <ul class="navbar-mobile lg-hide" data-mobile>
 <?php foreach ($menus as $menu): ?>
-  <li class="navbar-menus-item" class="<?= ($menu == strtolower($title)) ? "active" : "" ?>">
+  <li class="navbar-menus-item">
     <a class="navbar-menus-link" href="<?= ($menu != "home") ? "/".$menu : "/" ?>">
       <?= $menu ?>
     </a>
