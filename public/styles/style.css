@@ -142,3 +142,37 @@ body {
 .navbar-brand:focus-visible {
   color: red;
 }
+
+/* style untuk templates/footer.php */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: .5em 1em;
+}
+
+.footer-under {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-under-info a {
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-under-info a:hover, 
+.footer-under-info a:focus-visible {
+  color: red;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .footer-under {
+    flex-direction: column;
+  }
+
+  .footer-under-info {
+    order: 2;
+  }
+}
