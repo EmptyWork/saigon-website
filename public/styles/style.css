@@ -51,6 +51,11 @@ body {
   max-width: 50ch;
 }
 
+.hero-text .sub-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
 .promotional-image {
   max-height: 90vh;
   position: absolute;
@@ -65,27 +70,42 @@ body {
   opacity: .7;
 }
 
+.hero-action-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  gap: 1em;
+}
+
+.hero-action-link {
+  text-decoration: none;
+}
+
 .hero-action {
   display: flex;
-  gap: .3em;
+  gap: 0.3em;
   align-items: center;
-  margin-top: .6em;
-  border-radius: .3em;
-  font-size: 1.2rem;
-  border: .15rem solid red;
-  padding: .4em .8em;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  border: 0.15rem solid white;
+  color: white;
+  padding: 0.4em 0.8em;
   background: transparent;
-  color: red;
   cursor: pointer;
   text-transform: uppercase;
-  letter-spacing: .1;
+  letter-spacing: .1rem;
+}
+
+.hero-action.utama {
+  color: red;
+  border-color: red;
 }
 
 .hero-action svg {
   height: 1.1em;
 }
 
-.hero-action:hover, .hero-action:focus-visible {
+.hero-action.utama:hover, .hero-action.utama:focus-visible {
   background-color: red;
   color: #0e0e0e;
 }

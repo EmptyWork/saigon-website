@@ -5,7 +5,7 @@ class Pages extends CI_Controller {
 
 	public function view($page = 'home') {
     $data['title'] = ucfirst($page);
-    $data['menus'] = ['home', 'about'];
+    $data['menus'] = ['home', 'sinopsis', 'review'];
 
     $this->load->view('templates/header', $data);
     if($page == 'home') $this->load->view('templates/hero');
