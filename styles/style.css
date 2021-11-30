@@ -1,3 +1,13 @@
+/* 
+  @package app.netlify.emptywork.simple-website <http://github.com/EmptyWork/simple-website>
+  @author EmptyWork / Stevarth <http://github.com/EmptyWork> 
+  ==================
+
+  Di buat pada tanggal 30 November 2021
+  Sebagai tugas pertama PBP Kelas A
+  Tentang CodeIgniter3
+*/
+
 /* style global */
 * {
   margin: 0;
@@ -54,16 +64,6 @@ body {
 .hero-text .sub-heading {
   font-size: 1.2rem;
   margin-bottom: 1em;
-}
-
-.promotional-image {
-  max-height: 90vh;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  user-select: none;
-  max-width: 400px;
 }
 
 .year {
@@ -184,7 +184,7 @@ body {
   bottom: 0;
   right: 0;
   top: 0;
-  margin-top: 57.77px;
+  margin-top: 4.15rem;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -192,10 +192,12 @@ body {
   flex-direction: column;
   transform: translateY(-200%);
   transition: transform 1s ease;
+  visibility: hidden;
 }
 
 .navbar-mobile.open {
   transform: translateY(0%);
+  visibility: visible;
 }
 
 .navbar-mobile .navbar-menus-item {
@@ -274,10 +276,55 @@ body {
 .main {
   flex: 1 0 auto;
   padding: 2em;
+  max-width: 80rem;
+  margin: auto;
+  width: 100%;
+}
+
+.main img {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+.section ul {
+  margin-left: 1em;
+}
+
+.right-side {
+  width: 100%;
+}
+
+.promotional-image {
+  user-select: none;
+  max-width: 400px;
+  width: 100%;
+}
+
+.article {
+  max-width: 70ch;
+}
+
+.article h1 {
+  margin-bottom: 1em;
+}
+
+.article p {
+  margin: .5em;
 }
 
 @media screen and (max-width: 37.5rem) {
   .main.home {
     min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 50rem) {
+  .section {
+    flex-wrap: wrap;
   }
 }
