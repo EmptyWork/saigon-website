@@ -18,11 +18,3 @@ simple-website/
 ## Requirements
 
 * PHP 5.3.7 or later
-
-## How to Use
-### Run PHP built-in server (PHP 5.4 or later)
-
-```
-$ cd /path/to/codeigniter
-$ bin/server.sh
-```
